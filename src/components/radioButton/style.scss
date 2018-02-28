@@ -1,0 +1,15 @@
+.radio-button {
+
+  &__label {
+
+  	display: inline-block;
+    color: #282828;
+    font-size: 17px;
+    padding: 10px 25px 0 0;
+  }
+
+  &__radio {
+    margin-right: 8px;
+    margin-top: 10px;
+  }
+} 

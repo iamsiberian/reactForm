@@ -1,0 +1,25 @@
+.registration {
+    width: 372px;
+    margin: 0 auto;
+
+    &__header {
+    }
+
+    &__heading {
+        font-size: 33px;
+        color: #262e73;
+        margin: 0 0 34px 63px;
+    }
+
+    &__gender {
+        border: none;
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+
+    &__button {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #ffffff;
+    }
+}

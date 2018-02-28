@@ -1,0 +1,28 @@
+.form-field {
+
+    &__label {
+        display: block;
+        padding-top: 21px;
+        font-size: 14px;
+        color: #262e73;
+        font-weight: 400;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    &__input {
+        margin-top: 10px;
+        display: block;
+        background-color: #fff;
+        border: 0.7px solid #949caa;
+        height: 43px;
+        width: 330px;
+        padding: 0 19px 0 19px;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 20px;
+
+        &:focus {
+            background-color: #eff4fe;
+        }
+    }
+}
+

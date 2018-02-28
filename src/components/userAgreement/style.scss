@@ -1,0 +1,13 @@
+.userAgreement {
+    &__block {
+        display: block;
+        line-height: 12px;
+        margin: -20px 0 12px 20px;
+    }
+
+    &__link {
+        color: #262e73;
+        text-decoration: none;
+        line-height: 12px;
+    }
+}
