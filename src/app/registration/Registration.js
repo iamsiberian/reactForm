@@ -21,7 +21,7 @@ export default class Registration extends React.Component {
         };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleChange = this.handleSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
@@ -32,9 +32,9 @@ export default class Registration extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        console.log("Submit!" +
-            + "\nname: " + this.state.firstName
-            + "\nlastname: " + this.state.lastName
+        console.log("Submit!"
+            + "\nfirstName: " + this.state.firstName
+            + "\nlastName: " + this.state.lastName
             + "\nsex: " + this.state.sex
             + "\nemail: " + this.state.email
             + "\npass: " + this.state.password
@@ -55,7 +55,7 @@ export default class Registration extends React.Component {
                         name='firstName'
                         placeholder='Имя'
                         value={this.state.firstName}
-                        onChange={this.handleInputChange}
+                        onChange={this.handleChange}
                     />
 
                     <FormField
@@ -64,7 +64,7 @@ export default class Registration extends React.Component {
                         name='lastName'
                         placeholder='Фамилия'
                         value={this.state.lastName}
-                        onChange={this.handleInputChange}
+                        onChange={this.handleChange}
                     />
 
 
