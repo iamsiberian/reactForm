@@ -8,7 +8,19 @@ import UserAgreement from '../../components/userAgreement/UserAgreement';
 
 import './style.scss';
 
-export default class Registration extends React.Component {
+import {
+    connect
+} from 'react-redux';
+
+import {
+    bindActionCreators
+} from 'redux';
+
+import {
+    logIn
+} from './actions';
+
+class Registration extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -32,6 +44,7 @@ export default class Registration extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
+        this.props.logIn(this.state);
         console.log("Submit!"
             + "\nfirstName: " + this.state.firstName
             + "\nlastName: " + this.state.lastName
@@ -39,6 +52,10 @@ export default class Registration extends React.Component {
             + "\nemail: " + this.state.email
             + "\npass: " + this.state.password
             + "\nuser agreement: " + this.state.userAgreement);
+        const {
+            history
+            } = this.props;
+        history.push('/News');
     }
 
     render() {
@@ -114,3 +131,15 @@ export default class Registration extends React.Component {
         );
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        user: state.registrationReducer.user
+    }
+};
+
+const mapDispatchToProps = (dispatch) => ({
+    logIn: bindActionCreators(logIn, dispatch)
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Registration);

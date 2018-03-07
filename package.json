@@ -16,6 +16,9 @@
     "start": "webpack-dev-server --hot --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js"
   },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.2"
+  },
   "dependencies": {
     "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
@@ -37,6 +40,10 @@
     "style-loader": "^0.20.2",
     "uglifyjs-webpack-plugin": "^1.2.2",
     "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^2.11.1",
+    "copy-webpack-plugin": "^4.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   }
 }
