@@ -1,4 +1,5 @@
 .layout {
-  background: url("../../../public/background.png") no-repeat center top;
-  padding: 210px;
+  background: url("../../../public/background.png") no-repeat;
+  background-size: 100%;
+  height: -webkit-fill-available;
 }
