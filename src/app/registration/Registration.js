@@ -52,10 +52,8 @@ class Registration extends React.Component {
             + "\nemail: " + this.state.email
             + "\npass: " + this.state.password
             + "\nuser agreement: " + this.state.userAgreement);
-        const {
-            history
-            } = this.props;
-        history.push('/News');
+        const { history } = this.props;
+        history.push('/news');
     }
 
     render() {

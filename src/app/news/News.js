@@ -6,7 +6,7 @@ export default class News extends React.Component {
     render() {
         return (
         <section className='news'>
-
+fxgf
         </section>
         );
     }
